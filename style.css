@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-style: normal;
+    font-weight: 500;
+    font-size: large;
+    color: #ffffff;
+}
+body{background-color: black;}
+img{
+    width: 40%;
+    height: 40%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+section{
+    background-color: red;
+    width: 85%;
+    margin: 5%;
+}
+main{
+    width: 95%;
+    margin: 2.5%;
+}
+header{
+    width: 85%;
+    padding: 5%;
+    *{font-size: larger;}
+   div{
+    background-color: black;
+    padding: 10px;
+    width: 85%;
+    h1{font-family: "Bebas Neue", system-ui;}
+    img{
+        position: absolute;
+        top: 18%;
+        left: 60%;
+        width: 10%;
+        height: 10%;
+    }
+   }
+   ul{margin: 5%;}
+}
+p{margin: 0 5%;}
+h1{
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.outlineStyle{
+    outline-style: groove;
+    outline-width: 5px;
+    outline-color: #ffffff;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: space-evenly;
+    padding: 5%;
+}
+.column, main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (max-width: 850px){
+    header div img{
+            top: 3%;
+            left: 53%;
+            width: 17%;
+        }
+}
+@media screen and (max-width: 500px){
+    section{
+        width: 105%;
+        margin: 0;
+    }
+    header{
+        *{font-size: large;}
+        div{
+         img{display: none;}
+        }
+    }
+    h1, .column{
+        margin: 15px 0;
+        align-items: space-around;
+    }
+    .row{
+        flex-direction: column;
+        align-items: space-around;
+    }
+}
